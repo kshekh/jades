@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>Jades</title>
+
+    <link rel="stylesheet"
+  href="../node_modules/swiper/swiper-bundle.css"/>
+
+    <!-- Typeface Fonts -->
+    <link href="../node_modules/typeface-biorhyme/index.css" rel="stylesheet">
+    <link href="../node_modules/typeface-mitr/index.css" rel="stylesheet">
+
+
+    <!-- TailwindCSS -->
+    <link href="assets/dist/css/styles.css " rel="stylesheet ">
+
+
+</head>
+
+<body class="">
+    <!-- Whole Structure -->
+    <div class="overflow-hidden min-h-screen">
+
+        <header class="relative">
+
+            <!-- This example requires Tailwind CSS v2.0+ -->
+            <nav class="bg-white   -mx-20 px-20">
+
+                <div class="relative flex items-center justify-between px-3 sm:px-5 2xl:px-20  ">
+                    <!-- Left Side Navbar-->
+<div class="flex items-center justify-center gap-1 lg:gap-4">
+    <a href="javascript:void(0)" class="relative text-color-12 hover:text-color-4 transition-all ease-in-out duration-150 px-2 h-12 flex justify-center items-center "><span>
+        <svg viewBox="0 0 40.4 26.5" fill="currentColor" class="w-5 xs:w-7"> 
+            <path d="M1.6,3.2h37c0.6,0,1-0.4,1-1s-0.4-1-1-1h-37c-0.6,0-1,0.4-1,1S1.1,3.2,1.6,3.2z"/>
+            <path d="M1.6,25.2h37c0.6,0,1-0.4,1-1s-0.4-1-1-1h-37c-0.6,0-1,0.4-1,1S1.1,25.2,1.6,25.2z"/>
+            <path d="M1.6,14.2h20c0.6,0,1-0.4,1-1s-0.4-1-1-1h-20c-0.6,0-1,0.4-1,1S1.1,14.2,1.6,14.2z"/>
+            </svg>
+    </span></a>
+
+    <a href="javascript:void(0)" class="relative text-color-12 hover:text-color-4 transition-all ease-in-out duration-150 px-2 h-12 flex justify-center items-center "><span>
+       <svg viewBox="0 0 45.1 45.1" fill="currentColor" class="w-4 xs:w-6">
+	<path d="M43.6,41.5l-9.8-9.8C44,19.9,35.4,1,19.6,1C9.3,1.1,1,9.4,1,19.6C0.9,35.4,19.8,44,31.6,33.8l9.9,9.8
+		c0.7,0.5,1.6,0.3,2.1-0.4C43.9,42.7,43.9,42,43.6,41.5z M4,19.6C4,11,11,4,19.6,4c20.7,0.9,20.7,30.4,0,31.2C11,35.2,4,28.2,4,19.6
+		z"/> 
+</svg>
+    </span></a>
+</div>
+
+                    <div class="absolute inset-y-0 left-0 flex items-center hidden sm:hidden">
+                        
+                        <!-- Mobile menu button-->
+                        <button type="button"
+                            class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                            aria-controls="mobile-menu" aria-expanded="false">
+                            <span class="sr-only">Open main menu</span>
+                            <!--
+              Icon when menu is closed.
+  
+              Heroicon name: outline/menu
+  
+              Menu open: "hidden", Menu closed: "block"
+            -->
+                            <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h16M4 18h16" />
+                            </svg>
+                            <!--
+              Icon when menu is open.
+  
+              Heroicon name: outline/x
+  
+              Menu open: "block", Menu closed: "hidden"
+            -->
+                            <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        </button>
+                    </div>
+
+                    <!-- Logo and Desktop Navigation -->
+                    <div class="flex-1 flex items-center justify-center sm:items-center gap-3 lg:gap-10 2xl:gap-20">
+                        <div class="hidden md:block ">
+                            <div class="flex gap-3 lg:gap-10 2xl:gap-20">
+                                <div class="group relative">
+                                    <button type="button"
+                                        class="text-black group-hover:text-color-4 lg:text-xl font-light uppercase relative py-2 flex items-center gap-1 transition-all ease duration-150"><span>Shop</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            class="w-5 text-color-11 group-hover:text-color-4" viewBox="0 0 20 20"
+                                            fill="currentColor">
+                                            <path fill-rule="evenodd"
+                                                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                                clip-rule="evenodd" />
+                                        </svg></button>
+                                </div>
+
+                                <div class="group relative">
+                                    <button type="button"
+                                        class="text-black group-hover:text-color-4 lg:text-xl font-light uppercase relative py-2 flex items-center gap-1 transition-all ease duration-150"><span>Story</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            class="w-5 text-color-11 group-hover:text-color-4" viewBox="0 0 20 20"
+                                            fill="currentColor">
+                                            <path fill-rule="evenodd"
+                                                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                                clip-rule="evenodd" />
+                                        </svg></button>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="flex-shrink-0 flex items-center px-5 lg:px-0">
+                            <a href="#" class="block py-3">
+                                <img class="block h-6 xs:h-8 lg:h-12" src="assets/dist/img/logo.png"
+                                    alt="Jades Logo">
+                            </a>
+                        </div>
+                        <div class="hidden md:block ">
+                            <div class="flex gap-3 lg:gap-10 2xl:gap-20">
+
+                                <div class="group relative">
+                                    <button type="button"
+                                        class="text-black group-hover:text-color-4 lg:text-xl font-light uppercase relative py-2 flex items-center gap-1 transition-all ease duration-150"><span>blog</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            class="w-5 text-color-11 group-hover:text-color-4" viewBox="0 0 20 20"
+                                            fill="currentColor">
+                                            <path fill-rule="evenodd"
+                                                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                                clip-rule="evenodd" />
+                                        </svg></button>
+                                </div>
+                                <a href="#"
+                                    class="text-black hover:text-color-4 lg:text-xl font-light uppercase relative py-2 transition-all ease duration-150">Contact</a>
+                            </div>
+                        </div>
+                    </div>
+                   
+
+                    <!-- Right Side Navbar -->
+                    <div class="flex items-center justify-center  gap-1 lg:gap-4">
+                        <!-- User -->
+                        <a href="javascript:void(0)" class="relative text-color-12 hover:text-color-4 transition-all ease-in-out duration-150 px-2 h-12 flex justify-center items-center "><span>
+                            <svg viewBox="0 0 32 32" fill="none" class="w-5 xs:w-6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                                <circle cx="16" cy="16" r="14"/>
+                                <circle cx="16" cy="13" r="5"/>
+                                <path  d="M5.4,25.1c1.8-4.1,5.8-7,10.6-7c4.8,0,8.9,2.9,10.6,7"/>
+                                </svg>                                
+                        </span></a>
+                    <!-- Wishlist/Heart -->
+                        <button type="button" class="relative text-color-12 hover:text-color-4 transition-all ease-in-out duration-150 px-2 h-12 hidden sm:flex justify-center items-center "><span>
+                            <svg viewBox="0 0 32 32"  class="w-4 xs:w-6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                                <path d="M4 16 C1 12 2 6 7 4 12 2 15 6 16 8 17 6 21 2 26 4 31 6 31 12 28 16 25 20 16 28 16 28 16 28 7 20 4 16 Z" />
+                            </svg>
+                        </span>
+                        <span class="bg-color-6 text-white rounded-full py-1 px-1.5 leading-none text-xs font-medium absolute top-0 right-0 ring-2 ring-white">2</span>
+                    </button>
+                        <!-- Cart/Bag -->
+                        <button type="button" class="relative text-color-12 hover:text-color-4 transition-all ease-in-out duration-150 px-2 h-12 flex justify-center items-center "><span>
+                             <svg viewBox="0 0 512 512" fill="currentColor" class="w-5 xs:w-7">
+ 
+                                <path d="M214.7,402.8c-24.8,0-45,20.2-45,45c0,24.8,20.2,45,45,45s45-20.2,45-45C259.7,423,239.5,402.8,214.7,402.8z M214.7,467.7
+                                    c-11,0-19.9-8.9-19.9-19.9c0-11,8.9-19.9,19.9-19.9s19.9,8.9,19.9,19.9C234.6,458.8,225.6,467.7,214.7,467.7z"/>
+                         
+                                <path d="M372.6,402.8c-24.8,0-45,20.2-45,45c0,24.8,20.2,45,45,45s45-20.2,45-45C417.7,423,397.5,402.8,372.6,402.8z M372.6,467.7
+                                    c-11,0-19.9-8.9-19.9-19.9c0-11,8.9-19.9,19.9-19.9c11,0,19.9,8.9,19.9,19.9C392.5,458.8,383.6,467.7,372.6,467.7z"/>
+                         
+                                <path d="M383.7,165.8H203.6c-6.9,0-12.6,5.6-12.6,12.6s5.6,12.6,12.6,12.6h180.1c6.9,0,12.6-5.6,12.6-12.6
+                                    C396.3,171.4,390.7,165.8,383.7,165.8z"/>
+                         
+                                <path d="M373.9,231H213.4c-6.9,0-12.6,5.6-12.6,12.6s5.6,12.6,12.6,12.6h160.5c6.9,0,12.6-5.6,12.6-12.6
+                                    C386.5,236.7,380.9,231,373.9,231z"/>
+                         
+                                <path d="M506.3,109.7c-4.8-5.9-11.9-9.3-19.5-9.3H95.3l-7.9-38.4c-1.7-8-7.1-14.7-14.6-18l-55.2-24C11.2,17.4,3.8,20.3,1,26.7
+                                    c-2.8,6.4,0.2,13.8,6.5,16.5l55.2,24l60.8,295.3c2.4,11.6,12.8,20.1,24.6,20.1h301.2c6.9,0,12.6-5.6,12.6-12.6
+                                    c0-6.9-5.6-12.6-12.6-12.6H148.2l-7.4-35.9h310.9c11.9,0,22.2-8.4,24.6-20.1l35.2-170.7C513,123.3,511.1,115.6,506.3,109.7z
+                                     M451.7,296.3H135.6l-35.2-170.7l386.4,0L451.7,296.3z"/>
+                         
+                        </svg>
+                        </span>
+                        <span class="xs:bg-color-6 xs:text-white text-color-6 rounded-full xs:py-1 xs:px-1.5 leading-none text-xs font-medium absolute top-2 xs:top-0 right-0 ring-2 ring-white">2</span>
+                    </button>
+                    </div>
+                </div>
+
+
+                <!-- Mobile menu, show/hide based on menu state. -->
+                <div class="hidden md:hidden" id="mobile-menu">
+                    <div class="px-2 pt-2 pb-3 space-y-1">
+                        <a href="javascript:void(0)" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Shop</a>
+
+                        <a href="javascript:void(0)"
+                            class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Story</a>
+
+                        <a href="javascript:void(0)"
+                            class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Blog</a>
+
+                        <a href="javascript:void(0)"
+                            class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+                    </div>
+                </div>
+            </nav>
+
+        </header>
+
+ 
+
+<!-- main -->
+        <main>
+            <!-- slider -->
+            <section>
+                <div class="relative">
+                    <img src="../src/assets/dist/img/wenner-home.jpg" alt="" class="w-full">
+
+                </div>
+                <div class="absolute  top-40 right-50 max-w-none">
+                    <img src="../src/assets/dist/img/logo.png" alt="" class="w-32">
+                </div>
+
+            </section>
+            <!-- service -->
+            <section class="bg-color-5 px-4 flex  ">
+            <div class="max-w-7xl mx-auto">
+                <div class="flex justify-between item-center flex-wrap  gap-12 mt-14 ">
+                    <div class="flex justify-around ">
+                        <div class="bg-white h-24 w-24  rounded-full flex justify-center items-center mt-2">
+                         <span class="md:text-3xl font-medium text-color-1 ">   0 %</span>
+
+                        </div>
+                        <div class="ml-3 py-3">
+                            <h5 class="text-2xl font-medium text-color-1">Trans Fat Free</h5>
+                            <p class="text-lg text-color-13">Lorem ipsum dolor<br> sit
+                                amet consectetur</p>
+                        </div>
+                    </div>
+                    <div class="flex justify-around">
+                        <div class="bg-white h-24 w-24   rounded-full flex justify-center items-center mt-2">
+                        <img src="../src/assets/dist/img/file.png">
+
+                        </div>
+                        <div class="ml-3 py-3">
+                            <h5 class="text-2xl font-medium text-color-1">Portable</h5>
+                            <p class="text-lg text-color-13">Lorem ipsum dolor<br> sit
+                                amet consectetur</p>
+                        </div>
+                    </div>
+                    <div class="flex justify-around">
+                        <div class="bg-white h-24 w-24   rounded-full flex justify-center items-center mt-2">
+                            <img src="../src/assets/dist/img/watch.png">
+
+                        </div>
+                        <div class="ml-3 py-3">
+                            <h5 class="text-2xl font-medium text-color-1">Ready to Eat</h5>
+                            <p class="text-lg text-color-13">Lorem ipsum dolor<br> sit
+                                amet consectetur</p>
+                        </div>
+                    </div> 
+                    <div class="flex justify-around">
+                        <div class="bg-white h-24 w-24  rounded-full flex justify-center items-center mt-2">
+               
+                            <img src="../src/assets/dist/img/work.png">
+                        </div>
+                        <div class="ml-3 py-3">
+                            <h5 class="text-2xl font-medium text-color-1">Good for Health</h5>
+                            <p class="text-lg text-color-13">Lorem ipsum dolor<br> sit
+                                amet consectetur</p>
+                        </div>
+                    </div>
+                    
+                    <div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            </section>
+
+        <!-- cards -->
+        <section>
+            <div class="max-w-7xl mx-auto">
+                <div class="mt-18">
+                    <div class="grid lg:grid-cols-3 gap-4 justify-center ">
+                        <!-- card-1 -->
+                        <div class="p-4">
+                            <div>
+                                <img src="../src/assets/dist/img/mokup-01.jpf" alt="" class="rounded-3xl">
+                            </div>  
+                            <div class="py-8">
+                                <div class="flex justify-between">
+                                    <h4 class="uppercase">apple twist</h4>
+                                <a href="" class="">
+                                    <span class=" p-4 rounded-full   bg-color-14">+</span>
+                                </a>
+                                </div>
+                            </div>
+
+                        </div>
+                           <!-- card-2 -->
+                           <div class="p-4">
+                            <div>
+                                <img src="../src/assets/dist/img/home-img-2.jpg" alt="" class="rounded-3xl">
+                            </div>  
+                            <div class="py-8">
+                                <div class="flex justify-between">
+                                    <h4 class="uppercase">apple twist</h4>
+                                <a href="" class="">
+                                    <span class=" p-4 rounded-full   bg-color-14">+</span>
+                                </a>
+                                </div>
+                            </div>
+
+                        </div>
+                             <!-- card-3 -->
+                             <div class="p-4">
+                                <div>
+                                    <img src="../src/assets/dist/img/home-img-3.jpg" alt="" class="rounded-3xl">
+                                </div>  
+                                <div class="py-8">
+                                    <div class="flex justify-between">
+                                        <h4 class="uppercase">apple twist</h4>
+                                    <a href="" class="">
+                                        <span class=" p-4 rounded-full   bg-color-14">+</span>
+                                    </a>
+                                    </div>
+                                </div>
+    
+                            </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="relative">
+            <div class="max-w-5xl mx-auto">
+            <div class="mt-18">
+                <div class="flex justify-center">
+                    <h5 class="text-color-15 text-lg font-medium">About</h5>
+                    <img src="../src/assets/dist/img/logo.png" alt="" class="w-42">
+                </div>
+                <p class="text-center mt-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit, do eiusmod tempor incididunt 
+                    utlabore et dolore magna aliqua. Utenim ad viam, quis nostrud exercitation ullamcoLorem ipsum dolor sit amet, consectetur adipiscing elit, do eiusmod tempor incididunt 
+                    utlabore et dolore magna            </p>
+
+            </div>
+            </div>
+            
+        </section>
+
+        <section class="relative mt-24">
+            <div class="max-w-7xl mx-auto">
+                <h3 class="text-black font-bold    text-2xl text-center my-12">Recipe</h3>
+                <div class="grid md:grid-cols-4 sm:grid-cols-2 md:gap-24 gap-12 justify-center p-4">
+                    <div class="text-center">
+                        <img src="../src/assets/dist/img/menu-1.jpg" alt="" class="md:w-full w-60  ">
+                        <h4 class="font-medium text-center mt-6 text-xl">Tropcal Delight Acai</h4>
+                        <div class="ml-8">
+                            <div class="flex">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="#c0baaf">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z" />
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z" />
+                                  </svg>  
+                                  <span class="text-sm text-color-7 ml-2 mt-1">150 kcal</span>
+                            </div>
+                            <div class="flex mt-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="#c0baaf ">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                  </svg>  
+                                  <span class="text-sm text-color-7 ml-2 mt-1">15min</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="../src/assets/dist/img/menu-2.jpg" alt="" class="md:w-full w-60  ">
+                        <h4 class="font-medium text-center mt-6 text-xl">Tropcal Delight Acai</h4>
+                        <div class="sm:ml-8 ">
+                           <div>
+                            <div class="flex">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="#c0baaf">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z" />
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z" />
+                                  </svg>  
+                                  <span class="text-sm text-color-7 ml-2 mt-1">150 kcal</span>
+                            </div>
+                            <div class="flex sm:mt-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="#c0baaf ">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                  </svg>  
+                                  <span class="text-sm text-color-7 ml-2 mt-1">15min</span>
+                            </div>
+                           </div>
+                        </div>  
+                    </div>
+                    <div>
+                        <img src="../src/assets/dist/img/menu-3.jpg" alt="" class="md:w-full w-60  ">
+                        <h4 class="font-medium text-center mt-6 text-xl">Tropcal Delight Acai</h4>
+                        <div class="sm:ml-8">
+                            <div class="flex">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="#c0baaf">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z" />
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z" />
+                                  </svg>  
+                                  <span class="text-sm text-color-7 ml-2 mt-1">150 kcal</span>
+                            </div>
+                            <div class="flex sm:mt-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="#c0baaf ">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                  </svg>  
+                                  <span class="text-sm text-color-7 ml-2 mt-1">15min</span>
+                            </div>
+                        </div> 
+                    </div>
+                    <div>
+                        <img src="../src/assets/dist/img/menu-4.jpg" alt="" class="md:w-full w-60  ">
+                        <h4 class="font-medium text-center mt-6 text-xl">Tropcal Delight Acai</h4>
+                        <div class="sm:ml-8">
+                            <div class="flex">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="#c0baaf">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z" />
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z" />
+                                  </svg>  
+                                  <span class="text-sm text-color-7 ml-2 mt-1">150 kcal</span>
+                            </div>
+                            <div class="flex sm:mt-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="#c0baaf ">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                  </svg>  
+                                  <span class="text-sm text-color-7 ml-2 mt-1">15min</span>
+                            </div>
+                        </div> 
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+        </main>
+
+        <footer class="bg-color-14 py-12  mt-24">
+            <div class="max-w-7xl mx-auto ">
+                <div class="grid grid-cols-12">
+                    <div class="col-span-4">
+
+                    </div>
+                    <div class="col-span-8">
+                        <div class="grid lg:grid-cols-3 gap-8">
+                            <div>
+                                <h3 class="text-xl text-black font-medium uppercase">info</h3>
+                                <ul>
+                                    <li class="uppercase">  fqa</li>
+                                    <li class="">  shiping Policy</li>
+
+                                    <li class="">  Refund Policy</li>
+
+<li class="">  Privacy Policy  </li>
+<li class="">  Store Locxation      </li>
+
+
+                                </ul>
+                            </div>
+                            <div>
+                                <h3 class="uppercase text-xl text-black font-medium uppercase">account</h3>
+                                <ul>
+                                    <li>
+                                        My Profile
+                                    </li>
+                                    <li>
+                                        My Order    
+                                    </li>
+                                    <li>
+                                        My subscribe
+                                    </li>
+                                    <li>
+                                        My Rewards
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h3 class=" text-xl text-black font-medium uppercase">subscribe</h3>
+                                <p>Subscribe for the newsletter and 10% off 
+                                    your first order</p>
+                                
+                                
+                            </div>  
+                        </div>
+
+                    </div>
+
+                </div>          
+
+            </div>
+
+        </footer>
+
+    </div>
+
+
+    <script src="../node_modules/swiper/swiper-bundle.esm.browser.js"></script>
+    
+
+
+</body>
+
+</html>
